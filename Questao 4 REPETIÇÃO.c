@@ -2,27 +2,29 @@
 #include <stdlib.h>
 
 int main (void) {
-	//Questao 4 perguntar pro sensei
-	int qntNotas, contadorNotas, qntInicial; 
-	float nota1, nota2, media;
+	//Questao 4 
+	int qntNotas, contadorNotas; 
+	float somaNota, media, nota;
 	
 	printf("Digite a Quantidade de notas da sua turma: ");
 	scanf("%i", &qntNotas);
 	fflush(stdin);
 	
-	for(contadorNotas = qntInicial; contadorNotas <= qntNotas; contadorNotas++) {
+	for(contadorNotas = 0; contadorNotas < qntNotas; contadorNotas++) {
 			
-			printf("\nDigite a Primeira Nota: ");
-			scanf("%f", &nota1);
-			fflush(stdin);
-			printf("\nDigite a Segunda Nota: ");
-			scanf("%f", &nota2);
-			fflush(stdin);
-	}	
-			media = (nota1 + nota2) / 2;
-	
-	 	printf("\n--------------------------------\n");
-		printf("\nA media Total da turma eh: %.1f\n", media);
+		printf("\nDigite a %iª Nota: ", contadorNotas + 1);
+		scanf("%f", &nota);
+		fflush(stdin);
 		
+		somaNota += nota;//Zero Kara Tasu zutto tasu
+			
+	}	
+	
+	media = somaNota / qntNotas;
+	
+ 	printf("\n--------------------------------\n");
+	printf("\nA media Total da turma eh: %.1f\n", media);  
+	
 	return 0;
 }
+
