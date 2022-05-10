@@ -16,15 +16,14 @@ int main (void) {
 		scanf("%i", &numAlunos);
 		fflush(stdin);
 		
-		if(numAlunos >= 40 && numAlunos < 0) {
+		if(numAlunos <= 40 && numAlunos > 0) {
 			somaNumAlunos += numAlunos;
-			printf("\nA Media das Turmas eh: %i", somaNumAlunos / qntTurma);
 		} else {
 			printf("\nDIGITE ATE 40 ALUNOS!!\n E NAO DIGITA QUALQUER COISA!!");
 			contador--;
 		}
 	}	
-	
+	printf("\nA Media das Turmas eh: %i", somaNumAlunos / qntTurma);
 	
 	return 0;
 } 
