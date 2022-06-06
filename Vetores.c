@@ -7,7 +7,7 @@ int main (void) {
 	int num [9], cont;
 	
 	for (cont = 0; cont < tamanho; cont++) {
-		printf("Digite os numeros: ");
+		printf("Digite o %i numero: ", cont + 1);
 		scanf("%i", &num [cont]);
 		fflush(stdin);
 	}
