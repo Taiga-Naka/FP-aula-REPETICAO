@@ -3,7 +3,7 @@
 
 int main (void) {
 	//Questao 3 MATRIZES E VETORES
-	float num [10];
+	float num [10];//zero kara hajimaru kedo, shita no "for" no seide 10 made rimitto
 	int cont;
 	
 	num [1] = 1;
