@@ -16,14 +16,14 @@ int main (void) {
 	}
 	
 	for(cont = 0; cont < 10; cont++) {
-		if(texto [cont] != 'a' && texto [cont] != 'e' && texto [cont] != 'i' && texto [cont] != 'o' && texto [cont] != 'u') {
+		if(texto [cont] != 'a' && texto [cont] != 'e' && texto [cont] != 'i' && texto [cont] != 'o' && texto [cont] != 'u' && texto [cont] != 'A' && texto [cont] != 'E' && texto [cont] != 'I' && texto [cont] != 'O' && texto [cont] != 'U') {
 			consoante++;
 		} 
 	}
 	printf("Os consoantes: %i", consoante);
 	
 	for(cont = 0; cont < 10; cont++) {
-		if(texto [cont] != 'a' && texto [cont] != 'e' && texto [cont] != 'i' && texto [cont] != 'o' && texto [cont] != 'u') {
+		if(texto [cont] != 'a' && texto [cont] != 'e' && texto [cont] != 'i' && texto [cont] != 'o' && texto [cont] != 'u' && texto [cont] != 'A' && texto [cont] != 'E' && texto [cont] != 'I' && texto [cont] != 'O' && texto [cont] != 'U') {
 			printf("\nconsoantes: %c", texto [cont]);
 		} 
 	}
