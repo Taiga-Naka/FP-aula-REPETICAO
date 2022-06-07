@@ -5,18 +5,27 @@ int main (void) {
 	/* 4. Construa  um  algoritmo  que leia  um  vetor  de  10  caracteres,
 	  e  diga  quantas consoantes foram lidas. Imprima as consoantes.*/
 	char texto [10];
-	int cont;
+	int cont, consoante = 0;//tem q ser 0 pq vai somar mais 1
+	
+	printf("Digite 10 letras");
 	
 	for (cont = 0; cont < 10; cont++) {
-		printf("Digite %i letra: ", cont + 1);
-		scanf("%c", &texto);
+		printf("\nDigite %i letras: ", cont + 1);
+		scanf("%c", &texto [cont]);
 		fflush(stdin);
 	}
 	
-	if(texto == 'a' && texto == 'e' && texto == 'i' && texto == 'o' && texto == 'u') {
-		
-	} else {
-		
+	for(cont = 0; cont < 10; cont++) {
+		if(texto [cont] != 'a' && texto [cont] != 'e' && texto [cont] != 'i' && texto [cont] != 'o' && texto [cont] != 'u') {
+			consoante++;
+		} 
+	}
+	printf("Os consoantes: %i", consoante);
+	
+	for(cont = 0; cont < 10; cont++) {
+		if(texto [cont] != 'a' && texto [cont] != 'e' && texto [cont] != 'i' && texto [cont] != 'o' && texto [cont] != 'u') {
+			printf("\nconsoantes: %c", texto [cont]);
+		} 
 	}
 	
 	return 0;
