@@ -7,7 +7,7 @@ int main (void) {
 	
 	int matrizA[5][5], matrizB[5][5], matrizC[5][5], linha, coluna;
 	//A
-	printf("Digite matriz A\n: ");
+	printf("\nDigite matriz A: \n");
 	for (linha = 0; linha < 5; linha++) {
 		for (coluna = 0; coluna < 5; coluna++) {
 			printf("Digite matriz A [%i][%i]: ", linha, coluna);
@@ -16,7 +16,7 @@ int main (void) {
 		}
 	}
 	//B
-	printf("Digite matriz B\n: ");
+	printf("\nDigite matriz B: \n");
 	for (linha = 0; linha < 5; linha++) {
 		for (coluna = 0; coluna < 5; coluna++) {
 			printf("Digite matriz B [%i][%i]: ", linha, coluna);
@@ -44,7 +44,7 @@ int main (void) {
 		printf("\n");
 	}
 	
-	printf("\t\t-\n");
+	printf("\n\t\t-\n");
 	
 	printf("\nMatriz B: \n");
 	
@@ -55,7 +55,7 @@ int main (void) {
 		printf("\n");
 	}
 	
-	printf("\t\t=\n");
+	printf("\n\t\t=\n");
 	printf("\nResultado: \n");
 	
 	for (linha = 0; linha < 5; linha++) {
