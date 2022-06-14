@@ -5,7 +5,7 @@ int main (void) {
 	//Questao 9 MATRIZ
 	/*Construa  um  algoritmo  que  leia  uma  matriz  quadrada  de  ordem  4.  
 	Leia  uma constante K, multiplique a diagonal principal por esta constante e imprima a matriz multiplicada.*/
-	 int matriz[4][4], result[4][4], i, j, k;
+	 int matriz[4][4], i, j, k;
 	
 	for (i = 0; i < 4; i++) {
 		for (j = 0; j < 4; j++) {
@@ -20,14 +20,14 @@ int main (void) {
 	fflush(stdin);
 	
 	for (i = 0; i < 4; i++) {
-		result[i][i] = matriz[i][i] * k;
+		matriz[i][i] = matriz[i][i] * k;
 	}
 	
 	printf("\nresultado:\n\n");
 	
 	for (i = 0; i < 4; i++) {
 		for (j = 0; j < 4; j++) {
-			printf("%i\t", result[i][j]);
+			printf("%i\t", matriz[i][j]);
 		}	
 		printf("\n");
 	}
