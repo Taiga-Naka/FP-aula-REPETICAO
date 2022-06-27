@@ -27,6 +27,4 @@ int testeNumero (int num) {
 	} else {
 		return 1;
 	}
-	
-	
 }
